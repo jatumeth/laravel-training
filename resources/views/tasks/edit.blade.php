@@ -7,7 +7,7 @@
 <div>
 <form method="POST" action="/tasks/{{$task->id}}">
     @csrf
-
+    @put
     <label for="name">Task Name</label>
 <input type="text" name="name" class="form-control" id="name" value="{{$task->name}}>
     <input type="submit" name="submit" value="submit!">
